@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{sectsty}
+\usepackage{microtype}
+\usepackage{geometry, setspace, tocloft}
+\usepackage[plainpages=false, pdfpagelabels, hyperindex=true, linktoc=page]{hyperref}
+
+\geometry{letterpaper, margin=0.5in}
+\singlespacing
+\setcounter{tocdepth}{3}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\contentsname}{Table of Contents}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1in}
+
+			\Huge
+			\textbf{Oranday Recipes}
+
+			\vspace{0.5cm}
+
+			\Large
+			Last Updated: \today
+		\end{center}
+	\end{titlepage}
+	\newpage
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\phantomsection
+	\addcontentsline{toc}{section}{Chocolate Chip Walnut Cookies}
+	\include{cookies/chocolate_chip.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Oatmeal Cookies}
+	\include{cookies/oatmeal.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Coffee Cake}
+	\include{cakes/coffee.tex}
+\end{document}
