@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{sectsty}
 \usepackage{microtype}
-\usepackage{geometry, setspace, tocloft}
+\usepackage{geometry, setspace, tocloft, enumerate}
 \usepackage[plainpages=false, pdfpagelabels, hyperindex=true, linktoc=page]{hyperref}
 
 \geometry{letterpaper, margin=0.5in}
@@ -9,6 +9,7 @@
 \setcounter{tocdepth}{3}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\labelitemi}{\textasteriskcentered}
 
 \begin{document}
 	\begin{titlepage}
@@ -44,4 +45,19 @@
 	\phantomsection
 	\addcontentsline{toc}{section}{Coffee Cake}
 	\include{cakes/coffee.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Carrot Cake}
+	\include{cakes/carrot.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Banana Nut Bread}
+	\include{breads/banana_nut.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Corn Bread}
+	\include{breads/corn.tex}
 \end{document}
