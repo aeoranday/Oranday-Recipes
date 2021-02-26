@@ -1,5 +1,5 @@
-\documentclass{article}
-\usepackage{sectsty}
+\documentclass{report}
+\usepackage{sectsty, titlesec}
 \usepackage{microtype}
 \usepackage{geometry, setspace, tocloft, enumerate}
 \usepackage[plainpages=false, pdfpagelabels, hyperindex=true, linktoc=page]{hyperref}
@@ -10,6 +10,7 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\contentsname}{Table of Contents}
 \renewcommand{\labelitemi}{\textasteriskcentered}
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
 
 \begin{document}
 	\begin{titlepage}
@@ -29,9 +30,11 @@
 	\pagenumbering{roman}
 	\tableofcontents
 	\newpage
-
 	\pagenumbering{arabic}
 	\setcounter{page}{1}
+
+	\chapter{Cookies}
+	\newpage
 	\phantomsection
 	\addcontentsline{toc}{section}{Chocolate Chip Walnut Cookies}
 	\include{cookies/chocolate_chip.tex}
@@ -42,6 +45,8 @@
 	\include{cookies/oatmeal.tex}
 	\newpage
 
+	\chapter{Cakes}
+	\newpage
 	\phantomsection
 	\addcontentsline{toc}{section}{Carrot Cake}
 	\include{cakes/carrot.tex}
