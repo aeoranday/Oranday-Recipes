@@ -1,7 +1,7 @@
 \documentclass{report}
 \usepackage{sectsty, titlesec}
 \usepackage{microtype}
-\usepackage{geometry, setspace, tocloft, enumerate}
+\usepackage{geometry, setspace, tocloft, enumerate, titletoc}
 \usepackage[plainpages=false, pdfpagelabels, hyperindex=true, linktoc=page]{hyperref}
 
 \geometry{letterpaper, margin=0.5in}
@@ -15,13 +15,12 @@
 \begin{document}
 	\begin{titlepage}
 		\begin{center}
-			\vspace*{1in}
+			\vspace*{3in}
 
 			\Huge
-			\textbf{Oranday Recipes}
+			\textbf{Oranday Recipe Collection}
 
-			\vspace{0.5cm}
-
+			\vfill
 			\Large
 			Last Updated: \today
 		\end{center}
@@ -33,7 +32,10 @@
 	\pagenumbering{arabic}
 	\setcounter{page}{1}
 
-	\chapter{Cookies}
+	\chapter*{Cookies}
+	\addcontentsline{toc}{chapter}{Cookies}
+	\startcontents[chapters]
+	\printcontents[chapters]{}{1}{}
 	\newpage
 	\phantomsection
 	\addcontentsline{toc}{section}{Chocolate Chip Walnut Cookies}
@@ -45,7 +47,10 @@
 	\include{cookies/oatmeal.tex}
 	\newpage
 
-	\chapter{Cakes}
+	\chapter*{Cakes}
+	\addcontentsline{toc}{chapter}{Cakes}
+	\startcontents[chapters]
+	\printcontents[chapters]{}{1}{}
 	\newpage
 	\phantomsection
 	\addcontentsline{toc}{section}{Carrot Cake}
@@ -62,6 +67,10 @@
 	\include{cakes/pancake.tex}
 	\newpage
 
+	\chapter*{Breads}
+	\addcontentsline{toc}{chapter}{Breads}
+	\startcontents[chapters]
+	\printcontents[chapters]{}{1}{}
 	\phantomsection
 	\addcontentsline{toc}{section}{Banana Nut Bread}
 	\include{breads/banana_nut.tex}
@@ -72,6 +81,10 @@
 	\include{breads/corn.tex}
 	\newpage
 
+	\chapter*{Pastas}
+	\addcontentsline{toc}{chapter}{Pastas}
+	\startcontents[chapters]
+	\printcontents[chapters]{}{1}{}
 	\phantomsection
 	\addcontentsline{toc}{section}{Andrea's Penne \& Cheese}
 	\include{pastas/andies_penne.tex}
