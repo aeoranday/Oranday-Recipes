@@ -4,3 +4,4 @@ Name | Completion
 -|-
 Chocolate Chip Cookies | Completed
 Oatmeal Cookies | Completed
+Coconut Macaroons | WIP

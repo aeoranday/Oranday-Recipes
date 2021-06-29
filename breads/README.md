@@ -4,4 +4,4 @@ Name | Completion
 -|-
 Banana Nut Bread | Completed
 Corn Bread | Completed
-Flour Tortillas | WIP
+Flour Tortillas | Completed
