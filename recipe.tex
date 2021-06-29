@@ -1,5 +1,5 @@
 \documentclass{report}
-\usepackage{sectsty, titlesec}
+\usepackage{titlesec}
 \usepackage{microtype}
 \usepackage{geometry, setspace, tocloft, enumerate, titletoc}
 \usepackage[plainpages=false, pdfpagelabels, hyperindex=true, linktoc=page]{hyperref}
@@ -45,6 +45,11 @@
 	\phantomsection
 	\addcontentsline{toc}{section}{Oatmeal Cookies}
 	\include{cookies/oatmeal.tex}
+	\newpage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{Coconut Macaroons}
+	\include{cookies/coconut_macaroons.tex}
 	\newpage
 
 	\chapter*{Cakes}
